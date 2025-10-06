@@ -25,8 +25,17 @@ export default function QuizPage({ questions, answers, setAnswers }) {
   useEffect(() => {
     if (timeLeft <= 0 && !locked) {
       handleLock();
+
+      // Auto move to next question after small delay
+      setTimeout(() => {
+        if (index + 1 < questions.length) {
+          setIndex((i) => i + 1);
+        } else {
+          navigate("/results");
+        }
+      }, 1500); // delay to show answer feedback
     }
-  }, [timeLeft]);
+  }, [timeLeft, locked]);
 
   if (!questions || questions.length === 0)
     return <div className="card">Loading questions...</div>;
@@ -145,12 +154,25 @@ export default function QuizPage({ questions, answers, setAnswers }) {
               .slice(-5)
               .reverse()
               .map((a, idx) => (
-                <div key={idx} style={{ fontSize: 13, color: "var(--muted)" }}>
-                  Q {a.qIndex + 1}: {a.isCorrect ? "✅" : "❌"}{" "}
-                  <span style={{ color: "var(--white)" }}>
-                    {" "}
-                    {a.selected ? a.selected.toString().slice(0, 30) : "—"}
-                  </span>
+                <div
+                  key={idx}
+                  style={{
+                    fontSize: 13,
+                    color: "var(--muted)",
+                    borderBottom: "1px solid #333",
+                    paddingBottom: 4,
+                  }}
+                >
+                  <div>
+                    Q {a.qIndex + 1}: {a.isCorrect ? "✅" : "❌"}{" "}
+                    <span style={{ color: "var(--white)" }}>
+                      {a.selected ? a.selected.toString().slice(0, 30) : "—"}
+                    </span>
+                  </div>
+                  <div style={{ marginLeft: 16 }}>
+                    <strong style={{ color: "#999" }}>Correct Answer:</strong>{" "}
+                    <span style={{ color: "lightgreen" }}>{a.correct}</span>
+                  </div>
                 </div>
               ))}
           </div>
