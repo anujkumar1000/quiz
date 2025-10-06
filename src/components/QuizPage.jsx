@@ -98,6 +98,21 @@ export default function QuizPage({ questions, answers, setAnswers }) {
           className="question-text"
           dangerouslySetInnerHTML={{ __html: q.question }}
         />
+        {locked && (
+          <div
+            style={{
+              marginTop: 12,
+              padding: "10px 12px",
+              background: "#222",
+              borderRadius: 6,
+              color: "lightgreen",
+              fontSize: 14,
+            }}
+          >
+            ✅ Correct Answer:{" "}
+            <strong dangerouslySetInnerHTML={{ __html: q.correct_answer }} />
+          </div>
+        )}
 
         <div className="options" role="list">
           {q.options.map((opt, i) => {
