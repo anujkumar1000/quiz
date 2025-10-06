@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for water?",
+    "correct_answer": "H2O",
+    "incorrect_answers": ["O2", "HO2", "H2"]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which country has the largest land area?",
+    "correct_answer": "Russia",
+    "incorrect_answers": ["Canada", "China", "United States"]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the first President of the United States?",
+    "correct_answer": "George Washington",
+    "incorrect_answers": ["Thomas Jefferson", "John Adams", "Benjamin Franklin"]
+  },
+  {
+    "category": "Entertainment",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which movie features the quote, &quot;May the Force be with you&quot;?",
+    "correct_answer": "Star Wars",
+    "incorrect_answers": ["The Matrix", "Alien", "Blade Runner"]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What planet is known as the Red Planet?",
+    "correct_answer": "Mars",
+    "incorrect_answers": ["Venus", "Jupiter", "Saturn"]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many continents are there on Earth?",
+    "correct_answer": "7",
+    "incorrect_answers": ["5", "6", "8"]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "How many players are there in a football (soccer) team on the field?",
+    "correct_answer": "11",
+    "incorrect_answers": ["10", "12", "9"]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the powerhouse of the cell?",
+    "correct_answer": "Mitochondria",
+    "incorrect_answers": ["Nucleus", "Ribosome", "Golgi apparatus"]
+  },
+  {
+    "category": "Technology",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "HTML stands for?",
+    "correct_answer": "HyperText Markup Language",
+    "incorrect_answers": [
+      "HighText Machine Language",
+      "Hyperloop Machine Language",
+      "Home Tool Markup Language"
+    ]
+  },
+  {
+    "category": "Culture",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Sushi is a cuisine that originated in which country?",
+    "correct_answer": "Japan",
+    "incorrect_answers": ["China", "Korea", "Thailand"]
+  }
+]
